@@ -217,8 +217,8 @@
 			};
 
 			L.control.layers(overlays,{}, {
-				collapsed: false,
-				position: 'bottomleft'
+				collapsed: true,
+				position: 'topleft'
 
 			}).addTo(map);
 
@@ -263,7 +263,7 @@
 			}).addTo(map)
 
 			// ---- Escala 
-			L.control.scale().addTo(map)
+			L.control.scale({position: 'bottomright'}).addTo(map)
 	
 			//L.Control.geocoder().addTo(map);
 
